@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zyb15.studentmgr.ActivityDraw">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/curve"
+                    android:onClick="curve"
+                    android:background="@mipmap/curve"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+                <Button
+                    android:id="@+id/line"
+                    android:onClick="line"
+                    android:text="line"
+                    android:textSize="20sp"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+                <Button
+                    android:id="@+id/red"
+                    android:onClick="red"
+                    android:background="#FF0000"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+                <Button
+                    android:id="@+id/yellow"
+                    android:onClick="yellow"
+                    android:background="#FFFF00"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/circle"
+                    android:onClick="circle"
+                    android:background="@mipmap/circle"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+                <Button
+                    android:id="@+id/rect"
+                    android:onClick="rect"
+                    android:background="@mipmap/rect"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+                <Button
+                    android:id="@+id/blue"
+                    android:onClick="blue"
+                    android:background="#1E90FF"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+                <Button
+                    android:id="@+id/green"
+                    android:onClick="green"
+                    android:background="#00FF00"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:min="2" />
+
+        <Button
+            android:layout_gravity="left"
+            android:id="@+id/curveYes"
+            android:text="确定"
+            android:textSize="15px"
+            android:onClick="curveYes"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+
+
+    <com.example.zyb15.studentmgr.Bezier
+        android:id="@+id/bezier"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/SaveAndSet"
+            android:text="设置并保存"
+            android:textSize="10sp"
+            android:onClick="saveAndSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/SetButNotSave"
+            android:text="设置但不保存"
+            android:onClick="setButBotSave"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/Cancel"
+            android:text="取消"
+            android:textSize="10sp"
+            android:onClick="cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/CLear"
+            android:text="清除"
+            android:textSize="10sp"
+            android:onClick="clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

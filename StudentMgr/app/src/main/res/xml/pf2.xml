@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="turnonoffscreen"
+        android:title="是否开启横屏模式"
+        android:summaryOn="开启"
+        android:summaryOff="关闭"
+        android:defaultValue="false"
+        />
+
+
+    <!--<ListPreference-->
+        <!--android:key="fontsize"-->
+        <!--android:dialogTitle="字体大小"-->
+        <!--android:title="字体大小"-->
+        <!--android:summary="当前字体大小为：3"-->
+        <!--android:defaultValue="1.15"-->
+        <!--android:entries="@array/font_size"-->
+        <!--android:entryValues="@array/size_value"-->
+        <!--/>-->
+
+    <com.example.zyb15.studentmgr.MyListPreference
+        android:key="fontsize"
+        android:dialogTitle="字体大小"
+        android:title="字体大小"
+        android:summary="当前字体大小为：3"
+        android:defaultValue="1.15"
+        android:entries="@array/font_size"
+        android:entryValues="@array/size_value"
+        />
+
+
+</PreferenceScreen>

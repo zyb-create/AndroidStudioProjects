@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:title="账号与安全"
+        android:fragment="com.example.zyb15.studentmgr.ActivityConfig$PF1"
+        />
+
+    <header android:title="通用"
+        android:fragment="com.example.zyb15.studentmgr.ActivityConfig$PF2"
+        />
+
+    <header android:title="关于本机"
+        android:fragment="com.example.zyb15.studentmgr.ActivityConfig$PF3"
+        />
+
+</preference-headers>

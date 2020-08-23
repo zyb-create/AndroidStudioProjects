@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/stu_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:paddingStart="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/stu_message"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <!--android:textSize="15sp"-->
+</LinearLayout>

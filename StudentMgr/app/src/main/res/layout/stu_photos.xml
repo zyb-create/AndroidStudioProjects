@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="#FFCCCC"
+        android:gravity="center"
+        android:text="选择图片"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image2"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image3"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image4"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image5"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image6"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image7"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image8"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+        <ImageView
+            android:id="@+id/image9"
+            android:src="@mipmap/boy"
+            android:layout_columnWeight="1"
+            android:layout_height="96dp"/>
+    </GridLayout>
+
+
+
+
+
+</LinearLayout>

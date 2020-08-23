@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zyb15.weathertest.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <ImageView
+                android:src="@mipmap/location"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView_local"
+                android:layout_width="84dp"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="镇江市"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="200dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginEnd="47dp"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Today"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_date_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:text="DateAndWeather"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView_today"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginStart="64dp"
+                android:layout_toEndOf="@+id/relativeLayout" />
+
+            <TextView
+                android:id="@+id/textView_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="-2dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginStart="87dp"
+                android:layout_marginTop="107dp"
+                android:layout_toEndOf="@+id/relativeLayout"
+                android:gravity="center"
+                android:text="温度"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView_weather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

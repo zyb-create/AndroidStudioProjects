@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="user_no"
+        android:title="点击修改用户名"
+        android:summary="3170212039"
+        android:defaultValue="3170212039"
+        android:dialogTitle="您所使用的用户名为："
+        />
+    <EditTextPreference
+        android:key="user_password"
+        android:title="点击修改密码"
+        android:summary="123456"
+        android:defaultValue="123456"
+        android:dialogTitle="输入新密码："
+        />
+
+</PreferenceScreen>
